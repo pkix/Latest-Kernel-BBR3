@@ -50,7 +50,7 @@ jobs:
 
       - name: Setting .config
         working-directory: ./kernel/linux/
-        run: curl -sSL https://raw.githubusercontent.com/Naochen2799/Latest-Kernel-BBR3/main/.config > .config
+        run: curl -sSL https://raw.githubusercontent.com/pkix/Latest-Kernel-BBR3/main/.config > .config
 
       - name: Build Kernel
         working-directory: ./kernel/linux/
