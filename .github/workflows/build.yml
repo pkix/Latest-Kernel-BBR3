@@ -32,7 +32,7 @@ jobs:
           - arch: x86_64
             runs_on: ubuntu-latest
           - arch: arm64
-            runs_on: ubuntu-24.04-arm
+            runs_on: ubuntu-25.04-arm
     runs-on: ${{ matrix.runs_on }}
     env:
       ARCH: ${{ matrix.arch }}
@@ -79,7 +79,7 @@ jobs:
       - name: Setting .config
         working-directory: ./kernel/linux/
         run: |
-          curl -sSL https://raw.githubusercontent.com/Naochen2799/Latest-Kernel-BBR3/main/.config > .config
+          curl -sSL https://raw.githubusercontent.com/pkix/Latest-Kernel-BBR3/main/.config > .config
           make olddefconfig
 
       - name: Build Kernel
