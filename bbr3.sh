@@ -28,7 +28,7 @@ get_system_arch() {
 get_download_url_from_api() {
     local arch=$1
     local version=$2
-    local api_url="https://api.github.com/repos/Naochen2799/Latest-Kernel-BBR3/releases/tags/${arch}-${version}"
+    local api_url="https://api.github.com/repos/pkix/Latest-Kernel-BBR3/releases/tags/${arch}-${version}"
     
     # 获取下载链接
     local download_urls
